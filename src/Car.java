@@ -1,18 +1,18 @@
 public class Car {
 
     // Encapsulation
-    private final String make;
-    private final String model;
-    private final int year;
+    private  String make;
+    private  String model;
+    private  int year;
 
     // attributes
-    Car(String marca, String modelo, int ano){
-        this.make = marca;
-        this.model = modelo;
-        this.year = ano;
+    Car(String make, String model, int year){
+        this.make = make;
+        this.model = model;
+        this.year = year;
     }
 
-    // getters
+    // getters (Access the attributes securely.)
     public String getMake(){
         return make;
     }
@@ -22,4 +22,16 @@ public class Car {
     public int getYear(){
         return year;
     }
+
+    // setters (Modify the attributes securely.)
+    public void setMake(String make){
+        this.make = make;
+    }
+    public void setModel(String model){
+        this.model = model;
+    }
+    public void setYear(int year){
+        this.year = year;
+    }
+
 }
