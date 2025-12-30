@@ -6,6 +6,8 @@ public class Main {
 
         car.applyIncrease(0.10);
 
+        car.setModel("X5");
+
         // Accessing attributes via getters
         System.out.println(car.getMake());
         System.out.println(car.getModel());
@@ -13,3 +15,5 @@ public class Main {
         System.out.println("Valor do Carro : " + car.getValue());
     }
 }
+
+
